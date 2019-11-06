@@ -15,6 +15,7 @@ class Calculator extends React.Component {
     };
 
     // Bind our handleClick method (sets 'this' explicitly
+
     // to refer to this componenent) We did this because 'this'
     // would refer to the source of the click events
     this.handleClick = this.handleClick.bind(this);
