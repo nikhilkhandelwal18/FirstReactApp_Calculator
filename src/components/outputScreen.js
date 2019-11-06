@@ -2,15 +2,21 @@
 import React from "react";
 import OutputScreenRow from "./outputScreenRow.js";
 
-// Functional Component.
+// Class Component.
 // Use to hold two Screen Rows.
-const OutputScreen = props => {
-  return (
-    <div className="screen">
-      <OutputScreenRow value={props.question} />
-      <OutputScreenRow value={props.answer} />
-    </div>
-  );
-};
+class OutputScreen extends React.Component {
+  constructor() {
+    super();
+  }
+
+  render() {
+    return (
+      <div className="screen">
+        <OutputScreenRow value={this.props.question} />
+        <OutputScreenRow value={this.props.answer} />
+      </div>
+    );
+  }
+}
 
 export default OutputScreen;
